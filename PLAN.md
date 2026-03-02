@@ -30,7 +30,7 @@ Each ticket is scoped to teach one core concept from the learning path. Build th
 
 ---
 
-### TICKET-01 — Project Setup
+### TICKET-01 — Project Setup ✅ DONE
 
 **Goal:** Get a working dev environment with all three technologies wired together.
 
@@ -65,7 +65,7 @@ Each ticket is scoped to teach one core concept from the learning path. Build th
 
 ---
 
-### TICKET-02 — Shared Types & Mock Data
+### TICKET-02 — Shared Types & Mock Data ✅ DONE
 
 **Goal:** Define the data shape and seed the board with test tasks.
 
@@ -101,7 +101,7 @@ export const MOCK_TASKS: Task[] = [
 
 ---
 
-### TICKET-03 — `<task-card>` Component
+### TICKET-03 — `<task-card>` Component ✅ DONE
 
 **Goal:** Build a display-only card using `@property()`, DaisyUI card + badge, and custom event dispatch.
 
@@ -139,7 +139,7 @@ Requirements:
 
 ---
 
-### TICKET-04 — `<task-column>` Component
+### TICKET-04 — `<task-column>` Component ✅ DONE
 
 **Goal:** Build a column that holds and renders a list of task cards, using `@property()` and the `repeat` directive.
 
@@ -166,7 +166,7 @@ Requirements:
 
 ---
 
-### TICKET-05 — `<task-board>` Component (Basic)
+### TICKET-05 — `<task-board>` Component (Basic) ✅ DONE
 
 **Goal:** Build the top-level orchestrator that holds all state and passes tasks down to columns.
 
@@ -384,11 +384,11 @@ npm install @lit/context
 
 | # | Ticket | Key Concept |
 |---|--------|-------------|
-| 01 | Project Setup | Vite + Lit + Tailwind + DaisyUI |
-| 02 | Types & Mock Data | TypeScript interfaces, module structure |
-| 03 | `<task-card>` | `@property()`, DaisyUI card, event dispatch |
-| 04 | `<task-column>` | `@property({ type: Array })`, `repeat` directive |
-| 05 | `<task-board>` (basic) | `@state()`, derived data, Tailwind grid |
+| 01 | ~~Project Setup~~ ✅ | Vite + Lit + Tailwind + DaisyUI |
+| 02 | ~~Types & Mock Data~~ ✅ | TypeScript interfaces, module structure |
+| 03 | ~~`<task-card>`~~ ✅ | `@property()`, DaisyUI card, event dispatch |
+| 04 | ~~`<task-column>`~~ ✅ | `@property({ type: Array })`, `repeat` directive |
+| 05 | ~~`<task-board>` (basic)~~ ✅ | `@state()`, derived data, Tailwind grid |
 | 06 | `<add-task-modal>` | `@query`, `HTMLDialogElement`, form handling |
 | 07 | Event Wiring | Event bubbling, immutable state updates |
 | 08 | Advanced Directives | `classMap`, `when`, `styleMap` |

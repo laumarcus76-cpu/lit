@@ -8,7 +8,7 @@ const priorityClass: Record<Priority, string> = {
   high: 'badge-error',
 };
 
-const priorityLabel: Record<Priority, string> = {
+const priorityLabel: Record<Priority, string> = { // dict lookup table
   low: 'Low',
   medium: 'Medium',
   high: 'High',
@@ -16,7 +16,7 @@ const priorityLabel: Record<Priority, string> = {
 
 @customElement('task-card')
 export class TaskCard extends LitElement {
-  protected createRenderRoot() {
+  protected createRenderRoot() { // opts out of shadow DOM
     return this;
   }
 
@@ -25,8 +25,8 @@ export class TaskCard extends LitElement {
   private _onMove() {
     this.dispatchEvent(new CustomEvent('task-move', {
       detail: { taskId: this.task.id },
-      bubbles: true,
-      composed: true,
+      bubbles: true, // bubbles up DOM tree
+      composed: true, // can cross Shadow DOM 
     }));
   }
 
@@ -38,6 +38,8 @@ export class TaskCard extends LitElement {
     }));
   }
 
+  // Child component is "dumb", only announces events and displays data. 
+  // parent handles all of the actual logic
   render() {
     return html`
       <div class="card bg-base-100 shadow-sm border border-base-200">
